@@ -342,3 +342,17 @@ footer {
   transition: opacity 0.4s ease;
 }
 
+/* Slightly larger individual photos */
+.photo-section.photo-larger img {
+  height: 82vh;
+  max-height: 720px;
+}
+
+<!-- PHOTO 14 -->
+    .photo-section.full-photo img {
+  display: block;
+  width: 100%;
+  height: 75vh;
+  max-height: 650px;
+  object-fit: contain;
+  margin: 0 auto;
