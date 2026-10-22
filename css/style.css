@@ -155,8 +155,9 @@ h1 {
 .photo-section img {
   display: block;
   width: 100%;
-  height: 85vh;
-  object-fit: cover;}
+  height: auto;
+  max-height: none;
+  object-fit: contain;}
 
 .caption {
   max-width: 760px;
