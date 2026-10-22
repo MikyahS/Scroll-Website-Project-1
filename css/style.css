@@ -355,4 +355,22 @@ footer {
   height: 75vh;
   max-height: 650px;
   object-fit: contain;
-  margin: 0 auto;
+  margin: 0 auto;}
+
+  /* Photos 9 and 10 */
+.photo-pair {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 60px 8%;
+}
+
+.photo-pair img {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: 65vh;
+  max-height: 520px;
+  object-fit: contain;
+}
