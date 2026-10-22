@@ -358,16 +358,20 @@ footer {
   margin: 0 auto;}
 
   /* Photos 9 and 10 */
-.photo-pair {
-  padding: 70px 9%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px;
-  background: #e9e6df;
+.photo-pair img {
+  display: block;
+  width: calc(50% - 10px);
+  height: 65vh;
+  max-height: 600px;
+  object-fit: contain;
+  min-width: 0;
 }
 
-.photo-pair img {
-  width: 100%;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
+.photo-pair {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px 4%;
 }
