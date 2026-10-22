@@ -322,3 +322,8 @@ footer {
   transform: translateY(0);
 }
 
+/* Subtle image fade while scrolling */
+.photo-section img {
+  transition: opacity 0.4s ease;
+}
+
