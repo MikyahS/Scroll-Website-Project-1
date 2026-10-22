@@ -1,0 +1,393 @@
+
+/* ===== 1. BASIC SETTINGS ===== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #101010;
+  color: #f2f0eb;
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ===== 2. OPENING SCREEN ===== */
+
+.hero {
+  min-height: 100vh;
+  padding: 30px 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #101010;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.hero-content {
+  max-width: 850px;
+  padding: 90px 0;
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin-bottom: 22px;
+  color: #aaa59d;
+}
+
+h1,
+h2 {
+  font-family: Georgia, serif;
+  font-weight: normal;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: clamp(48px, 9vw, 110px);
+  margin-bottom: 24px;
+}
+
+.intro {
+  max-width: 480px;
+  color: #c3c0ba;
+}
+
+/* ===== 3. OPENING PHOTOS ===== */
+
+.opening-photos {
+  padding: 50px 7%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+  background: #101010;
+}
+
+.opening-photos img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+/* ===== 4. STORY SECTIONS ===== */
+
+.story-section,
+.feature-section {
+  padding: 110px 9%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+}
+
+.story-section {
+  background: #171717;
+}
+
+.story-copy h2,
+.caption h2 {
+  font-size: clamp(32px, 4vw, 56px);
+  margin-bottom: 24px;
+}
+
+.story-copy p:not(.eyebrow),
+.caption p {
+  max-width: 520px;
+  color: #c2beb7;
+}
+
+.story-section img,
+.feature-section img {
+  width: 100%;
+  max-height: 750px;
+  object-fit: cover;
+}
+
+.feature-section {
+  background: #e9e6df;
+  color: #1c1c1c;
+}
+
+.feature-section .story-copy p:not(.eyebrow) {
+  color: #55524d;
+}
+
+.feature-section .eyebrow {
+  color: #66615a;
+}
+
+/* ===== 5. SINGLE PHOTO SECTIONS ===== */
+
+.photo-section {
+  padding: 140px 6%;
+}
+
+.photo-section img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;}
+
+  .photo-section.full-photo img {
+  display: block;
+  width: 100%;
+  height: 75vh;
+  max-height: 650px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.photo-section:has(.full-photo img) {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.caption {
+  max-width: 760px;
+  margin: 30px auto 0;
+}
+
+.caption h2 {
+  font-size: clamp(28px, 4vw, 46px);
+}
+
+.caption p {
+  color: #c2beb7;
+}
+
+/* ===== 6. PHOTO PAIR ===== */
+
+.photo-pair {
+  padding: 70px 9%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  background: #e9e6df;
+}
+
+.photo-pair img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+/* ===== 7. STORY BREAKS ===== */
+
+.story-break {
+  min-height: 100vh;
+  padding: 140px 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #e9e6df;
+  color: #1c1c1c;
+}
+
+.story-break h2 {
+  max-width: 850px;
+  font-size: clamp(42px, 7vw, 82px);
+  margin-bottom: 30px;
+}
+
+.story-break p:not(.eyebrow) {
+  max-width: 680px;
+  font-size: 17px;
+  line-height: 1.9;
+  color: #494640;
+}
+
+.story-break .eyebrow {
+  color: #66615a;
+}
+
+/* Alternate story break color */
+
+.story-break:nth-of-type(even) {
+  background: #171717;
+  color: #f2f0eb;
+}
+
+.story-break:nth-of-type(even) p:not(.eyebrow) {
+  color: #c2beb7;
+}
+
+.story-break:nth-of-type(even) .eyebrow {
+  color: #aaa59d;
+}
+
+/* ===== 8. FOOTER ===== */
+
+footer {
+  padding: 35px 7%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background: #e9e6df;
+  color: #1c1c1c;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+}
+
+/* ===== 9. SCROLL REVEALS ===== */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition:
+    opacity 1s ease,
+    transform 1s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== 10. MOBILE LAYOUT ===== */
+
+@media (max-width: 700px) {
+  .hero {
+    min-height: 85vh;
+  }
+
+  .opening-photos {
+    gap: 12px;
+  }
+
+  .story-section,
+  .feature-section {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 70px 7%;
+  }
+
+  .photo-section {
+    padding: 60px 7%;
+  }
+
+  .photo-pair {
+    gap: 12px;
+    padding: 50px 7%;
+  }
+
+  .story-break {
+    min-height: auto;
+    padding: 90px 8%;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+}
+
+/* Respect reduced-motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Scroll reveal effect */
+.reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Subtle image fade while scrolling */
+.photo-section img {
+  transition: opacity 0.4s ease;
+}
+
+/* Slightly larger individual photos */
+.photo-section.photo-larger img {
+  height: 82vh;
+  max-height: 720px;
+}
+
+<!-- PHOTO 14 -->
+    .photo-section.full-photo img {
+  display: block;
+  width: 100%;
+  height: 75vh;
+  max-height: 650px;
+  object-fit: contain;
+  margin: 0 auto;}
+
+  /* Photos 9 and 10 */
+.photo-pair img {
+  display: block;
+  width: calc(50% - 10px);
+  height: 65vh;
+  max-height: 600px;
+  object-fit: contain;
+  min-width: 0;
+}
+
+.photo-pair {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px 4%;
+}
+
+/* Make selected photos larger */
+.photo-section.photo-larger img {
+  height: 82vh;
+  max-height: 720px;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* Keep Photo 14 smaller */
+.photo-section.photo-smaller img {
+  height: 55vh;
+  max-height: 420px;
+  width: 100%;
+  object-fit: contain;
+}
