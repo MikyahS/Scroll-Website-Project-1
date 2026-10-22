@@ -375,3 +375,19 @@ footer {
   gap: 20px;
   padding: 50px 4%;
 }
+
+/* Make selected photos larger */
+.photo-section.photo-larger img {
+  height: 82vh;
+  max-height: 720px;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* Keep Photo 14 smaller */
+.photo-section.photo-smaller img {
+  height: 55vh;
+  max-height: 420px;
+  width: 100%;
+  object-fit: contain;
+}
