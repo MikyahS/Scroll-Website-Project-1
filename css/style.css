@@ -360,17 +360,19 @@ footer {
   /* Photos 9 and 10 */
 .photo-pair {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  gap: 50px;
-  padding: 60px 8%;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 6%;
 }
 
 .photo-pair img {
   display: block;
-  width: 100%;
-  max-width: 900px;
-  height: 65vh;
-  max-height: 520px;
+  width: calc(50% - 15px);
+  max-width: 450px;
+  height: 55vh;
+  max-height: 450px;
   object-fit: contain;
+  min-width: 0;
 }
