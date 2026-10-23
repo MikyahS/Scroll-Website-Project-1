@@ -25,3 +25,11 @@
 .top-nav .nav-current {
   color: #e53939;
 }
+
+.top-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 5%;
+}
