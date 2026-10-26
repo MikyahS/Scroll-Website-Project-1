@@ -373,3 +373,29 @@ footer {
   width: 100%;
   object-fit: contain;
 }
+
+* PROJECT ONE — navigation */
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 5%;
+  background: #090707;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.top-nav a {
+  color: #f3eeee;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+.top-nav a:hover,
+.top-nav .nav-current {
+  color: #ce0b0b;
+}
