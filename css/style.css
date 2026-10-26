@@ -397,9 +397,8 @@ footer {
 }
 
 .top-nav a:hover,
-.top-nav .nav-current {
-  color: #ce0b0b;
-}
+.top-nav .nav-current, .site-header > .nav-current {
+  color: #ce0b0b;}
 
 .scroll-link, .site-header, .nav-current {
     display: block;
