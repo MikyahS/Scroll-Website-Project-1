@@ -374,10 +374,11 @@ footer {
   object-fit: contain;
 }
 
-* PROJECT ONE — navigation */
+/* PROJECT ONE — navigation */
 
 .top-nav {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 30px;
