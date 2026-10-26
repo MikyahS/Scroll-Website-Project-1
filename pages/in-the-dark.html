@@ -67,5 +67,24 @@
     </section>
   </main>
 
+  <script>
+const sections = document.querySelectorAll(
+  '.darkroom-page .intro, .darkroom-page .chapter, .darkroom-page .ending'
+);
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, {
+  threshold: 0.15
+});
+
+sections.forEach((section) => observer.observe(section));
+</script>
+
 </body>
 </html>

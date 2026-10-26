@@ -475,3 +475,18 @@ footer {
     object-fit: contain;
     margin: 40px auto;
 }
+
+.darkroom-page .intro,
+.darkroom-page .chapter,
+.darkroom-page .ending {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.darkroom-page .intro.visible,
+.darkroom-page .chapter.visible,
+.darkroom-page .ending.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
