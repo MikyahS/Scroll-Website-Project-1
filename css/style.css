@@ -401,4 +401,8 @@ footer {
   color: #ce0b0b;
 }
 
-
+.scroll-link {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
