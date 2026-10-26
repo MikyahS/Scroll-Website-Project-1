@@ -465,3 +465,13 @@ footer {
     justify-content: center;
     text-align: center;
 }
+
+/* Scale down images on the second page */
+.darkroom-page img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+    margin: 40px auto;
+}
