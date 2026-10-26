@@ -406,30 +406,62 @@ footer {
     margin: 0 auto;
 }
 
-/* Second page only */
-.darkroom-page main {
+/* SECOND PAGE ONLY */
+
+.darkroom-page #begin {
     padding: 40px 6%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
-.darkroom-page h1 {
-    margin-bottom: 30px;
+.darkroom-page .intro {
+    padding: 40px 0 80px;
+    max-width: 850px;
+}
+
+.darkroom-page .chapter {
+    padding: 50px 0;
+    max-width: 850px;
+}
+
+.darkroom-page .ending {
+    padding: 60px 0 80px;
+    max-width: 850px;
+}
+
+/* Chapter labels: 01, 02, 03, 04 */
+
+.darkroom-page .chapter-label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Section headings */
+
+.darkroom-page h2 {
+    margin-top: 0;
+    margin-bottom: 24px;
     line-height: 1.2;
 }
 
-.darkroom-page h2 {
-    margin-top: 50px;
-    margin-bottom: 20px;
-    line-height: 1.3;
-}
+/* Paragraphs */
 
-.darkroom-page p {
+.darkroom-page #begin p:not(.chapter-label) {
     line-height: 1.8;
     margin-bottom: 25px;
+    max-width: 680px;
 }
 
-.darkroom-page img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 35px auto;
+/* Image placeholders */
+
+.darkroom-page .image-placeholder {
+    min-height: 300px;
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
