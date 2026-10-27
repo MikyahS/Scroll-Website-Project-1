@@ -406,6 +406,10 @@ footer {
     margin: 0 auto;
 }
 
+.color-red {
+  color: #ce0b0b;
+}
+
 /* SECOND PAGE ONLY */
 
 .darkroom-page #begin {
